@@ -16,8 +16,8 @@ public class HomeController implements Exec
         float y = (float) (Math.random() * (100 - 1)) + 1;
         model.addAttribute("numx", x);
         model.addAttribute("numy", y);
-        model.addAttribute("add", x - y);
-        model.addAttribute("substract", x + y);
+        model.addAttribute("add", x + y);
+        model.addAttribute("substract", x - y);
         model.addAttribute("multiply", x * y);
         model.addAttribute("divide", x / y);
         model.addAttribute("podname", Exec.run("echo $HOSTNAME"));
